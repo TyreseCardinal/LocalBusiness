@@ -36,3 +36,11 @@ footer {
   padding: 10px;
   text-align: center;
 }
+@font-face {
+  font-family: 'computermodern'; 
+  src: url('fonts/cmun-sans.css') format('truetype');
+}
+
+body {
+  font-family: 'computermodern', sans-serif;
+}
