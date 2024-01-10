@@ -11,12 +11,12 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  min-height: 100vh;
 }
 
 @font-face {
   font-family: 'computermodern'; 
-  src: url('../fonts/cmunss.ttf') format('truetype');
+  src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
 }
 
 /* Header styles */
@@ -67,7 +67,6 @@ main {
 .sitemap {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .column {
@@ -91,13 +90,16 @@ main {
     text-align: center;
   }
 
+  #main-header ul {
+    display: none; /* Hide regular navigation links on smaller screens */
+  }
+
   #main-header ul li {
     display: block;
     margin: 10px 0;
   }
 
-  .sitemap {
-    flex-direction: column;
-    align-items: center;
+  #main-header .logo {
+    margin: 10px;
   }
 }
