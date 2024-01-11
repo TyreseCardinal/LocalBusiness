@@ -75,30 +75,66 @@ main {
   margin: 10px;
 }
 
+.sitemap a {
+  color: #2601f5; /* Set link color to white */
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .social-icons img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-icons img {
+    max-width: 60px;
+    min-width: 60px;
+  }
 }
 
 .email-signup {
   margin-top: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.email-signup form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
+.email-signup input {
+  margin-bottom: 10px;
+}
+
+.email-signup input[type="submit"] {
+  cursor: not-allowed;
+}
+
+.fake-message {
+  font-style: italic;
+  color: #555;
+  font-size: 12px;
+}
+
+/* Add the following styles for mobile responsiveness */
+@media screen and (max-width: 600px) {
   #main-header nav {
-    text-align: center;
+    display: none; /* Hide navigation links by default on small screens */
   }
 
   #main-header ul {
-    display: none; /* Hide regular navigation links on smaller screens */
+    text-align: center;
+    margin-top: 10px;
   }
 
   #main-header ul li {
@@ -106,7 +142,16 @@ ul {
     margin: 10px 0;
   }
 
-  #main-header .logo img {
-    max-width: 80%; /* Adjust the percentage as needed */
+  #main-header a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 5px;
+  }
+
+  #main-header a:hover {
+    background-color: #555;
   }
 }
