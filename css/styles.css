@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'computermodern', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'computermodern';
+  src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
+}
+
+/* Header styles */
+#main-header {
+  background-color: #274472;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Main Content styles */
+main {
+  flex: 1;
+  /* Make the main section grow to fill the available space */
+  padding: 20px;
+  background-color: #5885AF;
+}
+
+/* Original styles for product cards */
+.product-container {
+  display: flex;
+  overflow: hidden; /* Ensure hidden overflow for smooth animation */
+  margin: 20px 0;
+}
+
+.product {
+  width: 150px; /* Adjusted width for a square shape */
+  height: 150px; /* Adjusted height for a square shape */
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80%; /* Limiting image height to 80% of the card height */
+  margin-bottom: 10px; /* Adding margin to separate image and content */
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+e
+
+
+/* Footer styles */
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  /* Push the footer to the bottom */
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.sitemap a {
+  color: #2601f5;
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-icons img {
+    max-width: 60px;
+    min-width: 60px;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+
+  #main-header ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #main-header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #main-header a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  #main-header a:hover {
+    background-color: #41729F;
+  }
+
+  #main-header .logo img {
+    width: fit-content;
+    height: auto;
+  }
+
+  .welcome {
+    list-style-type: none;
+    font-size: 20vw;
+    display: grid;
+    color: #274472;
+    justify-items: center;
+  }
+
+  .welcometextslogan p {
+    display: grid;
+    justify-items: start;
+    font-size: 5vw;
+    color: #C3E0E5;
+  }
+
+  #smarterchoice {
+    justify-items: end;
+  }
+
+  #offer {
+    color: #274472;
+    display: grid;
+    padding-top: 50px;
+    justify-content: center;
+    font-size: 10vw;
+  }
+}
