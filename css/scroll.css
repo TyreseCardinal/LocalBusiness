@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.product-card {
+  height: 25vh;
+  border: solid 2px black;
+  border-radius: 25px;
+  display: grid;
+  justify-items: center;
+}
+
+.product-card p,
+h2 {
+  display: grid;
+  justify-items: center;
+}
