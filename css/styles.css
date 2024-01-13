@@ -36,7 +36,6 @@ body {
 /* Main Content styles */
 main {
   flex: 1;
-  /* Make the main section grow to fill the available space */
   padding: 20px;
   background-color: #5885AF;
 }
@@ -87,17 +86,13 @@ button:hover {
   background-color: #0056b3;
 }
 
-e
-
-
 /* Footer styles */
 #main-footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
-  margin-top: auto;
-  /* Push the footer to the bottom */
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 .sitemap {
@@ -193,5 +188,29 @@ e
     padding-top: 50px;
     justify-content: center;
     font-size: 10vw;
+  }
+}
+
+/* Carousel styles */
+.product-carousel {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+
+  75% {
+    transform: translateX(-300%);
   }
 }
