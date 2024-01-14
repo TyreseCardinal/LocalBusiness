@@ -1,5 +1,3 @@
-/* Reset some default styles */
-body,
 h1,
 h2,
 h3,
@@ -18,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 @font-face {
@@ -33,12 +33,44 @@ body {
   text-align: center;
 }
 
+.header-nav-icon {
+  max-width: 50%;
+}
+
 /* Main Content styles */
 main {
   flex: 1;
   padding: 20px;
   background-color: #5885AF;
 }
+
+.welcome {
+  list-style-type: none;
+  font-size: 20vw;
+  display: grid;
+  color: #274472;
+  justify-items: center;
+}
+
+.welcometextslogan p {
+  display: grid;
+  justify-items: start;
+  font-size: 5vw;
+  color: #C3E0E5;
+}
+
+#smarterchoice {
+  justify-items: end;
+}
+
+#offer {
+  color: #274472;
+  display: grid;
+  padding-top: 50px;
+  justify-content: center;
+  font-size: 10vw;
+}
+
 
 /* Original styles for product cards */
 .product-container {
@@ -132,14 +164,20 @@ button:hover {
   height: 30px;
 }
 
-@media screen and (max-width: 600px) {
+.footer-location-image {
+  width: 50vw;
+  height: 50vw;
+}
+
+@media screen and (max-width: 767px) {
   .social-icons img {
     max-width: 60px;
     min-width: 60px;
   }
 
   #main-header nav {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   #main-header ul {
@@ -165,34 +203,9 @@ button:hover {
   }
 
   #main-header .logo img {
-    width: fit-content;
-    height: auto;
-  }
-
-  .welcome {
-    list-style-type: none;
-    font-size: 20vw;
     display: grid;
-    color: #274472;
-    justify-items: center;
-  }
-
-  .welcometextslogan p {
-    display: grid;
-    justify-items: start;
-    font-size: 5vw;
-    color: #C3E0E5;
-  }
-
-  #smarterchoice {
-    justify-items: end;
-  }
-
-  #offer {
-    color: #274472;
-    display: grid;
-    padding-top: 50px;
-    justify-content: center;
-    font-size: 10vw;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
   }
 }
