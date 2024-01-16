@@ -20,8 +20,6 @@ body {
   padding: 0px;
 }
 
-
-
 @font-face {
   font-family: 'computermodern';
   src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
@@ -34,38 +32,35 @@ body {
   text-align: center;
 }
 
-nav a:hover {
-  background-color: whitesmoke transparent 20%;
-}
-
 .header-nav-icon {
   width: 35%;
-  height: auto;
+  height: 70%;
 }
 
-/* Main Content styles */
+/* Main Content Styles */
 main {
   flex: 1;
   background-color: #5885AF;
 }
 
-.welcome {
-  list-style-type: none;
-  font-size: 20vw;
-  display: grid;
-  color: #274472;
-  justify-items: center;
-}
-
-.welcometextslogan p {
+/* Welcome/Slogan Card Styles */
+#welcome-card {
   display: grid;
   justify-items: start;
   font-size: 5vw;
   color: #C3E0E5;
+  padding: 20px;
+}
+
+#welcome-text {
+  display: grid;
+  justify-self: center;
+  font-size: 20vw;
+  color: #274472;
 }
 
 #smarterchoice {
-  justify-items: end;
+  justify-self: end;
 }
 
 /* Footer styles */
@@ -116,9 +111,6 @@ main {
   height: 80%;
 }
 
-
-
-
 @media screen and (max-width: 767px) {
   .social-icons img {
     max-width: 100%;
@@ -142,7 +134,7 @@ main {
 
   #header a {
     display: block;
-    color: #fff;
+    color: white;
     padding: 0px;
     text-decoration: none;
     border-radius: 5px;
@@ -157,13 +149,14 @@ main {
     height: 100%;
   }
 
-  .our-mission-card {
+  #our-mission-card {
     border: solid 2px #274472;
     background-color: #274472;
     font-weight: 500;
+    padding: 20px;
   }
 
-  .our-mission-card p {
+  #our-mission-card p {
     font-size: 1.5rem;
     text-align: end;
     color: #5885af;
@@ -173,6 +166,11 @@ main {
     display: grid;
     justify-content: end;
     color: #5885af;
+  }
+
+  #our-mission-card img {
+    width: 100%;
+    height: auto;
   }
 
 
