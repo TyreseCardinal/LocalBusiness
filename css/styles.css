@@ -20,6 +20,8 @@ body {
   padding: 0px;
 }
 
+
+
 @font-face {
   font-family: 'computermodern';
   src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
@@ -28,14 +30,16 @@ body {
 /* Header styles */
 #header {
   background-color: #274472;
-  color: #fff;
-  padding: 10px;
   margin: 0px;
   text-align: center;
 }
 
+nav a:hover {
+  background-color: whitesmoke transparent 20%;
+}
+
 .header-nav-icon {
-  width: 50%;
+  width: 35%;
   height: auto;
 }
 
@@ -112,43 +116,45 @@ main {
   height: 80%;
 }
 
+
+
+
 @media screen and (max-width: 767px) {
   .social-icons img {
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
+    height: 100%;
   }
 
   #header nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #header ul {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   #header ul li {
     display: block;
-    margin: 10px 0;
+    margin: 0;
   }
 
   #header a {
     display: block;
     color: #fff;
-    padding: 10px;
+    padding: 0px;
     text-decoration: none;
     border-radius: 5px;
   }
 
-  #header a:hover {
-    background-color: #41729F;
+  #header {
+    color: #333;
   }
 
   #header .logo img {
-    display: grid;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .our-mission-card {
