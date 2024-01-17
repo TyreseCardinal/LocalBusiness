@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'computermodern';
+  src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
+}
+
 h1,
 h2,
 h3,
@@ -20,10 +25,6 @@ body {
   padding: 0px;
 }
 
-@font-face {
-  font-family: 'computermodern';
-  src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
-}
 
 /* Header styles */
 #header {
@@ -70,7 +71,6 @@ main {
   padding: 20px;
   text-align: center;
   margin-top: auto;
-  /* Push the footer to the bottom */
 }
 
 .sitemap {
@@ -91,7 +91,6 @@ main {
 }
 
 .social-icons {
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -173,5 +172,74 @@ main {
     height: auto;
   }
 
+  #our-values-card {
+    font-size: 1.5rem;
+    text-align: start;
+    color: #274472;
+    padding: 20px;
+    font-weight: 900;
+    border: #5885af 2px solid;
+  }
+
+  #our-values-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive layout for smaller screens (mobile) */
+@media (max-width: 767px) {
+  #product-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .product-highlights-card-image {
+    max-width: 100%;
+  }
+
+  .product-highlights-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .product-highlights-card li {
+    font-size: 0.9rem;
+  }
+
+  .product-highlights-card-button {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+
+  .product-highlights-card {
+    display: grid;
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    object-fit: cover;
+    background-color: #C3E0E5;
+    justify-items: center;
+  }
+
+  .product-highlights-card-button {
+    font-size: 1rem;
+    justify-self: center;
+    margin: 20px;
+  }
+
+  #product-highlights-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+  }
+
+  #product-highlights-title {
+    display: grid;
+    justify-content: center;
+    font-size: 3rem;
+    color: #274472;
+    margin: 20px;
+    font: xx-large;
+  }
 
 }
