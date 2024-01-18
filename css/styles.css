@@ -77,7 +77,6 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  flex-flow: column-reverse;
 }
 
 .column {
@@ -95,10 +94,7 @@ main {
   margin: 0;
 }
 
-.social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
+.social-icons li {}
 
 .social-icons img {
   width: 30px;
@@ -187,14 +183,26 @@ main {
   }
 }
 
+
+
+/* Responsive Layout for Medium Screens (Tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-highlights-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Responsive layout for smaller screens (mobile) */
 @media (max-width: 767px) {
   #product-highlights {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    box-sizing: border-box;
   }
 
   .product-highlights-card-image {
     max-width: 100%;
+    height: 100%;
   }
 
   .product-highlights-card h2 {
@@ -202,12 +210,7 @@ main {
   }
 
   .product-highlights-card li {
-    font-size: 0.9rem;
-  }
-
-  .product-highlights-card-button {
-    font-size: 0.9rem;
-    margin: 10px;
+    font-size: 1rem;
   }
 
   .product-highlights-card {
@@ -216,7 +219,8 @@ main {
     border-radius: 25px;
     padding: 20px;
     margin: 10px;
-    object-fit: cover;
+    object-fit: fill;
+    font-weight: 500;
     background-color: #C3E0E5;
     justify-items: center;
   }
@@ -224,13 +228,7 @@ main {
   .product-highlights-card-button {
     font-size: 1rem;
     justify-self: center;
-    margin: 20px;
-  }
-
-  #product-highlights-card {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    gap: 10px;
+    margin: 0px;
   }
 
   #product-highlights-title {
@@ -239,7 +237,22 @@ main {
     font-size: 3rem;
     color: #274472;
     margin: 20px;
-    font: xx-large;
+    border: dotted 2px #C3E0E5;
+    border-radius: 25px;
+  }
+
+  .product-highlights-card u {
+    font-size: 1rem;
+  }
+
+  .product-highlights-card a {
+    font-size: 1rem;
+  }
+
+  #follow-us {
+    display: grid;
+    justify-content: center;
+    color: #2601f5;
   }
 
 }
