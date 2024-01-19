@@ -100,3 +100,42 @@ main {
   height: 100%;
   box-sizing: border-box;
 }
+
+#olivias-story {
+  display: grid;
+  grid-template-rows: repeat(1fr 1fr);
+  grid-gap: 20px;
+}
+
+#olivias-story-text {
+  display: grid;
+  justify-content: center;
+  font-family: computermodern;
+}
+
+.olivias-story-card {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.olivias-story-card p {
+  padding: 10px;
+  font-weight: 550;
+}
+
+.olivias-story-card img {
+  width: 40%;
+  height: auto;
+  border: 20px ridge #274472;
+  justify-self: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  #olivias-story {
+    grid-template-rows: 2fr;
+  }
+}
