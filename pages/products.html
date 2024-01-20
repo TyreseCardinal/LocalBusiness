@@ -10,29 +10,44 @@
     content="Fake Local Business for Full Stack Web Development Course, provided by Innotech College">
   <meta name="keywords" content="HTML, CSS">
   <link rel="stylesheet" type="text/css" href="../css/products.css">
-  <link href="../css/uicons-brands.css" type="text/css" rel="stylesheet">
+  <link href="../fonts/webfonts/uicons-brands.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
-  <header id="main-header">
-    <a href="index.html" class="logo">
+  <header id="header">
+    <a href="../index.html" class="logo">
       <img src="../images/ReconditionedPhonesLogo.png" alt="Logo">
     </a>
+
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="../pages/about.html">
+        <img src="../assets/fi-interface-svg/info.svg" alt="About" class="header-nav-icon">
+        <br>
+        About
+        </br>
+      </a>
+
+      <a href="../pages/products.html">
+        <img src="../assets/fi-interface-svg/catalog-magazine.svg" alt="Products" class="header-nav-icon">
+        <br>
+        Products
+        </br>
+      </a>
+
+      <a href="../pages/contact.html">
+        <img src="../assets/fi-interface-svg/phone-flip.svg" alt="Contact" class="header-nav-icon">
+        <br>
+        Contact
+        </br>
+      </a>
     </nav>
   </header>
   <!-- End of Header -->
 
   <!-- Main Section -->
   <main>
-    <div class="productshowcase">
+    <div class="product-showcase">
       <!-- Phone Cards -->
       <div class="product-card">
         <img class="product-image"
@@ -275,50 +290,64 @@
   <!-- End of Main Content -->
 
   <!-- Footer -->
-  <footer id="main-footer">
+  <footer id="footer">
     <div class="sitemap">
       <div class="column">
-        <!-- Original Newsletter content removed -->
-      </div>
-      <div class="column">
         <h3>Socials</h3>
-        <ul class="social-icons">
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <img src="./assets/fi-brands-svg/fi-brands-twitter.svg" alt="Twitter">
-            </a>
-          </li>
-          <li>
-            <a href="https://facebook.com" target="_blank">
-              <img src="./assets/fi-brands-svg/fi-brands-facebook.svg" alt="Facebook">
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com" target="_blank">
-              <img src="./assets/fi-brands-svg/fi-brands-instagram.svg" alt="Instagram">
-            </a>
-          </li>
-          <li>
-            <a href="https://youtube.com" target="_blank">
-              <img src="./assets/fi-brands-svg/fi-brands-youtube.svg" alt="YouTube">
-            </a>
-          </li>
-        </ul>
+        <div class="social-icons">
+          <a href="https://Twitter.com" target="_blank">
+            <img src="./assets/fi-brands-svg/fi-brands-twitter-alt.svg" alt="Twitter/X">
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="./assets/fi-brands-svg/fi-brands-facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="./assets/fi-brands-svg/fi-brands-instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <img src="./assets/fi-brands-svg/fi-brands-youtube.svg" alt="YouTube">
+          </a>
+        </div>
+        <div class="column">
+          <h3>
+            Location And Hours
+          </h3>
+          <img src="./images/Fakelocation.jpg" alt="Location" class="footer-location-image">
+          </img><br>
+          <u>
+            Monday - Friday:
+          </u>
+          <ul>
+            2pm - 10pm
+          </ul>
+          <u>
+            Saturday:
+          </u>
+          <ul>
+            10am - 10pm
+          </ul>
+          <u>
+            Sunday:
+          </u>
+          <ul>
+            CLOSED
+          </ul>
+        </div>
+        <!-- Email Signup Form (if enough space) -->
+        <div class="email-signup">
+          <form>
+            <h3>Subscribe to our Newsletter</h3>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe" disabled>
+            <p class="fake-message">Thanks for subscribing (not really)!</p>
+          </form>
+          <div class="column">
+            <h3>Legal</h3>
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <p><a href="./pages/privacypolicy.html">Privacy Policy</a></p>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <h3>Legal</h3>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-        <p><a href="./pages/privacypolicy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-    <!-- Email Signup Form (if enough space) -->
-    <div class="email-signup">
-      <form>
-        <h3>Subscribe to our Newsletter</h3>
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <input type="submit" value="Subscribe" disabled>
-        <p class="fake-message">Thanks for subscribing (not really)!</p>
-      </form>
     </div>
   </footer>
   <!-- End of Footer -->
