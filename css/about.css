@@ -3,6 +3,8 @@
   src: url('../fonts/computermodern/cmunss.ttf') format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 h1,
 h2,
 h3,
@@ -21,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100vw;
   margin: 0px;
   padding: 0px;
 }
@@ -93,17 +96,15 @@ main {
 #header .logo img {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 #olivias-story-title {
   display: grid;
-  justify-content: start;
-  align-content: end;
-  font-size: 2.5rem;
-  color: #274472;
-  margin-top: 0px;
-  padding-top: 0px;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
 }
 
 #olivias-story-card-container {
@@ -122,6 +123,7 @@ main {
 
 .olivias-story-card p {
   font-weight: 550;
+
 }
 
 #wide-p-tag {
@@ -148,8 +150,4 @@ main {
   #olivias-story {
     grid-template-rows: 1fr;
   }
-}
-
-#meet-the-team-card-container h1 {
-  font-size:
 }
