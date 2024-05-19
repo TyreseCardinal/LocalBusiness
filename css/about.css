@@ -102,8 +102,8 @@ main {
 }
 
 .header-nav-icon {
-  width: 35%;
-  height: 70%;
+  width: 70px;
+  height: 70px;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@ main {
   justify-items: center;
   align-items: center;
   color: #fff;
-  border: double 3px #fff;
+  border: double 4px #333;
 }
 
 #header .logo img {
@@ -125,6 +125,8 @@ main {
   height: 100%;
   box-sizing: content-box;
 }
+
+#about-nav {}
 
 /* Footer styles */
 #footer {
