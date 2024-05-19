@@ -26,10 +26,8 @@
 
     <nav>
       <a href="./about.html">
-        <img src="../assets/fi-interface-svg/info.svg" alt="About" class="header-nav-icon">
-        <br id="about">
-        About
-        </br>
+        <img src="/assets/fi-interface-svg/info.svg" alt="" class="header-nav-icon">
+        <br class=""> About </br>
       </a>
 
       <a href="../pages/products.html">
@@ -51,8 +49,13 @@
 
   <!-- Main -->
   <main>
+    <div class="container" id="about-me-title">
+      <h1>
+        Olivia's Story
+      </h1>
+    </div>
     <section class="container" id="about-me-container">
-      <!-- Top Left Grid Cell (1,1) -->
+      <!-- CARD ONE Top Left Grid Cell (1,1) -->
       <div class="card" id="about-me-card-one">
         <p>
           Born and raised in a modest Silicon Valley neighborhood, Olivia Bennett developed an early appreciation for
@@ -62,11 +65,11 @@
           potential for growth, education, and empowerment within her community.
         </p>
       </div>
-      <!-- Top Right Grid Cell (1,2) -->
-      <div class="card" id="about-me-card-two">
+      <!-- (IMAGE) CARD TWO Top Right Grid Cell (1,2) -->
+      <div class="container" id="about-me-card-two">
         <img src="../images/pexels-anna-shvets-5324912.jpg" alt="Olivia Bennett"></img>
       </div>
-      <!-- Middle Left And Right Grid Cell (2,2) -->
+      <!-- CARD THREE Second Row Left And Right Grid Cell (2,1+2) -->
       <div class="card" id="about-me-card-three">
         <p>
           <strong>
@@ -76,11 +79,11 @@
           </strong>
         </p>
       </div>
-      <!-- Bottom Left Grid Cell (3,1) -->
-      <div class="card" id="about-me-card-four">
-        <img src="/images/pexels-shvetsa-5324860.jpg" width="250px" height="auto" alt="Olivia Bennett"></img>
+      <!-- (IMAGE) CARD FOUR Third Row Left Grid Cell (3,1)-->
+      <div class="container" id="about-me-card-four">
+        <img src="/images/pexels-shvetsa-5324860.jpg" alt="Olivia Bennett"></img>
       </div>
-      <!-- Bottom Right Grid Cell (3,2) -->
+      <!-- CARD FIVE Third Row Right Grid Cell (3,2) -->
       <div class="card" id="about-me-card-five">
         <p>
           The journey wasn't without obstacles - from mastering the art of refurbishment to establishing credibility in
@@ -92,6 +95,17 @@
           environmental responsibility.
         </p>
       </div>
+      <!-- (IMAGE) CARD SIX Bottom Row (4,1+2) -->
+      <div class="container" id="about-me-card-six">
+        <img src="/images/pexels-anna-shvets-5324986.jpg" alt="">
+      </div>
+    </section>
+    <section class="container" id="embeded-video">
+      <iframe src="https://www.youtube.com/embed/WHqxBlFuIXA"
+        title="How a Traded-In Apple iPhone Gets Refurbished | WSJ" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
     </section>
 
 
@@ -146,7 +160,6 @@
             CLOSED
           </ul>
         </div>
-        <!-- Email Signup Form (if enough space) -->
         <div class="email-signup">
           <form>
             <h3>Subscribe to our Newsletter</h3>
