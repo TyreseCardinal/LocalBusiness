@@ -27,28 +27,58 @@ body {
   padding: 0px;
 }
 
-
 /* Header styles */
 #header {
-  background-color: #274472;
+  background-color: #113a5d;
   margin: 0px;
   text-align: center;
 }
 
 .header-nav-icon {
-  width: 35%;
-  height: 70%;
+  width: 50px;
+  height: 50px;
   text-align: center;
+  padding: 10px;
 }
 
+#header-nav p {
+  color: #fff;
+}
 
-/* Main Content Styles */
+#header nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+}
+
+#header a {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #333;
+  border: double 4px #333;
+  text-decoration: none;
+  background-color: #274472;
+}
+
+#header .logo img {
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+}
+
+/* Main Content  */
 main {
   flex: 1;
   background-color: #5885AF;
 }
 
-/* Welcome/Slogan Card Styles */
+/* Welcome/Slogan Card */
 #welcome-card {
   display: grid;
   justify-items: start;
@@ -69,174 +99,273 @@ main {
   justify-self: end;
 }
 
-/* Footer styles */
-#footer {
-  background-color: #333;
-  color: #fff;
+/* Our Mission Card and Our Values Card */
+#our-mission-card {
+  border: solid 2px #274472;
+  background-color: #274472;
+  font-weight: 500;
   padding: 20px;
-  text-align: center;
 }
 
-.sitemap {
+#our-mission-card p {
+  font-size: 1.5rem;
+  text-align: end;
+  color: #5885af;
+}
+
+#our-mission-header {
+  display: grid;
+  justify-content: end;
+  color: #C3E0E5;
+  font-size: 2rem;
+}
+
+#our-mission-card img {
+  width: 100%;
+  height: auto;
+  border: #5885AF 4px solid
+}
+
+.our-mission-strong {
+  color: #C3E0E5;
+  font-size: 1.7rem;
+}
+
+#reconditioned-text {
+  font-size: 2rem;
+  color: #C3E0E5;
+}
+
+#our-values-card {
+  text-align: start;
+  color: #274472;
+  padding: 20px;
+  font-weight: 500;
+  border: #5885af 2px solid;
+}
+
+#our-values-card img {
+  width: 100%;
+  height: auto;
+  border: 4px #274472 solid;
+}
+
+#our-values-card u {
+  font-size: 1.6rem;
+  color: #C3E0E5;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+#our-values-card p {
+  font-size: 1.5rem;
+  color: #274472;
+  font-weight: bolder;
+}
+
+#our-values-header {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Product Highlights Section */
+#product-highlights {
+  background-color: #274472;
+  display: grid;
+}
+
+.product-highlights-card-image {
+  max-width: 100%;
+  height: 100%;
+}
+
+.product-highlights-card h2 {
+  font-size: 1.2rem;
+}
+
+.product-highlights-card li {
+  font-size: 1rem;
+}
+
+.product-highlights-card {
+  display: grid;
+  border: solid 2px black;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  object-fit: fill;
+  font-weight: 500;
+  background-color: #C3E0E5;
+  justify-items: center;
+  max-width: 450px;
+  max-height: fit-content;
+}
+
+.product-highlights-card-button {
+  font-size: 1rem;
+  justify-self: center;
+  margin: 0px;
+}
+
+#product-highlights-title {
+  display: grid;
+  justify-content: center;
+  font-size: 3rem;
+  color: #C3E0E5;
+  background-color: #274472;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.product-highlights-card u {
+  font-size: 1rem;
+}
+
+.product-highlights-card a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  color: #5885AF;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  color: #C3E0E5;
+  text-decoration: double;
 }
 
 .column {
   flex: 1;
 }
 
-.social-icons {
+#follow-us {
+  display: grid;
+  justify-content: center;
+  color: #C3E0E5;
+  background-color: #274472;
+  font-size: 1rem;
+}
+
+#social-icons {
   display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
 }
 
-.social-icons img {
-  width: 20%;
-  height: auto;
-  margin: 0px 7px 0px 7px;
+#social-icons svg {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
 }
 
-.footer-location-image {
-  max-width: 80%;
-  height: 60%;
+/* Subsribe To Our Newsletter */
+.subscription-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-/* Responsive Layout for Medium Screens (Tablet) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .product-highlights-card {
+.subscription-form h2 {
+  margin-bottom: 15px;
+}
+
+.subscription-form input {
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.subscription-form button {
+  padding: 10px 20px;
+  background-color: #5885AF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.subscription-form button:hover {
+  background-color: #218838;
+}
+
+#message {
+  margin-top: 10px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hours and Location */
+#hours-and-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#hours-and-location u,
+ul {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+#hours-and-location u {
+  color: #C3E0E5;
+}
+
+#hours-and-location ul {
+  color: #5885af;
+  font-weight: bolder;
+}
+
+/* Responsive Design (Media Queries) */
+
+/* Desktop  (1024px - 1920px) */
+@media (min-width: 1024px) {}
+
+/* Tablet (768px - 1024px)*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #product-highlights {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #location-iframe-med {
+    display: grid;
+  }
+
+  #location-iframe-sml {
+    display: none;
   }
 }
 
-/* Responsive layout for smaller screens (mobile) */
-@media (max-width: 767px) {
+/* Mobile (0px - 768px) */
+@media screen and (max-width: 767px) {
   #product-highlights {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     box-sizing: border-box;
-  }
-
-  .product-highlights-card-image {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .product-highlights-card h2 {
-    font-size: 1.2rem;
-  }
-
-  .product-highlights-card li {
-    font-size: 1rem;
-  }
-
-  .product-highlights-card {
-    display: grid;
-    border: solid 2px black;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 10px;
-    object-fit: fill;
-    font-weight: 500;
-    background-color: #C3E0E5;
     justify-items: center;
   }
 
-  .product-highlights-card-button {
-    font-size: 1rem;
-    justify-self: center;
-    margin: 0px;
+  #location-iframe-med {
+    display: none;
   }
 
-  #product-highlights-title {
+  #location-iframe-sml {
     display: grid;
-    justify-content: center;
-    font-size: 3rem;
-    color: #274472;
-    margin: 20px;
-    border: dotted 2px #C3E0E5;
-    border-radius: 25px;
-  }
-
-  .product-highlights-card u {
-    font-size: 1rem;
-  }
-
-  .product-highlights-card a {
-    font-size: 1rem;
-  }
-
-  #follow-us {
-    display: grid;
-    justify-content: center;
-    color: #2601f5;
-    font-size: 1rem;
-  }
-
-  .social-icons img {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  #header nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #header a {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    color: #C3E0E5;
-    border: double 4px #333;
-  }
-
-  #header .logo img {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  #our-mission-card {
-    border: solid 2px #274472;
-    background-color: #274472;
-    font-weight: 500;
-    padding: 20px;
-  }
-
-  #our-mission-card p {
-    font-size: 1.5rem;
-    text-align: end;
-    color: #5885af;
-  }
-
-  #our-mission-header {
-    display: grid;
-    justify-content: end;
-    color: #5885af;
-  }
-
-  #our-mission-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  #our-values-card {
-    text-align: start;
-    color: #274472;
-    padding: 20px;
-    font-weight: 500;
-    border: #5885af 2px solid;
-  }
-
-  #our-values-card img {
-    width: 100%;
-    height: auto;
   }
 }
-
-#our-values-card p {
-  font-size: 1.5rem;
-}
-
-#our-values-header {}
